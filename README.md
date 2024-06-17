@@ -1,5 +1,6 @@
 # Library of Babel - A variation from Jorge Luis Borges's idea
 
+![Library of Babel](Media/Library.png)
 
 ## Interesting facts?
 
