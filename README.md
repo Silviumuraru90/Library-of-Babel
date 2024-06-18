@@ -2,11 +2,15 @@
 
 ![Library of Babel](Media/Library.png)
 
+
 ## Interesting facts?
 
- The `cure for cancer` should be found within those lines. Probability? Well, `100%`. Even if not found entirely within the same line or page or book, it should still be there.
+To begin with, [this document](https://libraryofbabel.info/Borges/KurdLasswitz-TheUniversalLibrary.pdf). This will give you an idea why more of the library cannot be processed and why not even sites like [this](https://libraryofbabel.info/theory4.html) don't store the information, but make it so real that you would believe the opposite. What they achieved, is truly remarkable!
 
- What else? Well:
+
+The `cure for cancer` should be found within those lines. Probability? Well, `100%`. Even if not found entirely within the same line or page or book, it should still be there.
+
+What else? Well:
 - all your `dreams`, `hopes`, `feelings`, `ideas`;
 - the `secrets of the universe`;
 - even `your own future`;
