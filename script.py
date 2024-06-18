@@ -1101,7 +1101,6 @@ for combination in combinations:
         continue
     # Limits - end
 
-    print("da")
     
     combination_with_space = combination_str + ' '
     combination_length = len(combination_with_space)
