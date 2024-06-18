@@ -30,6 +30,8 @@ Then, the beauty of it arises from the fact that whatever string up to a length 
 - contain less than 5 distinct chars for a length or combo of between 10-20 chars;
 - contain less than 8 distinct chars for a length or combo of over 20 chars;
 - contain specific 2-char variation at the beginning of the combo;
+- contain no doubling letters, such as `aa` or `bb` or so on, as a standalone (delimited by spaces / endlines) structure;
+- contain no other char formations other than valid 2 letter or 3 letter English words, as long as such char group in a combination, avoiding spaces at this char group's ends, is 2 or 3 in length; 
 - contain no 4-letter progressions such as `abcd`, `klmn` or others, no matter if coming in the form of a substring or at a `step` of indices within the combo (the step is big enough to assure a 4-char progression within a 27-char length limit). This means that the following constructs are avoided: `aadefgaa`, `aadaeafag`, but also the inverse situation, such as `gfed` or `aaan    m  d ldwwak`;
 - contain no two spaces one next to the other;
 - contain words that have no vowels and are over 6 chars in length, with the exception of "rhythms" (the longest one in English lang.);
