@@ -1530,7 +1530,7 @@ async def process_combinations(combinations):
 if __name__ == "__main__":
     symbols = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",
                "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "]
-    combinations = product(symbols, repeat=7)
+    combinations = product(symbols, repeat=27)
 
     main_folder = "Library"
     create_folder(main_folder)

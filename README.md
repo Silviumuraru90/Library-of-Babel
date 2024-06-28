@@ -5,10 +5,10 @@
 
 ## Interesting facts?
 
-To begin with, [this document](https://libraryofbabel.info/Borges/KurdLasswitz-TheUniversalLibrary.pdf). This will give you an idea why more of the library cannot be processed and why not even sites like [this](https://libraryofbabel.info/theory4.html) don't store the information, but make it so real that you would believe the opposite. What they achieved, is truly remarkable!
+To begin with, [this document](https://libraryofbabel.info/Borges/KurdLasswitz-TheUniversalLibrary.pdf). This will give you an idea why even this "short" variation cannot be processed by a personal PC and why not even sites like [this](https://libraryofbabel.info/theory4.html) don't store the information, but make it so real that you would believe the opposite. In any case, what they achieved is truly remarkable!
 
 
-The `cure for cancer` should be found within those lines. Probability? Well, `100%`. Even if not found entirely within the same line or page or book, it should still be there.
+The `cure for cancer` should be found within the output lines. Probability? Well, `100%`. 
 
 What else? Well:
 - all your `dreams`, `hopes`, `feelings`, `ideas`;
@@ -21,9 +21,9 @@ It's a collection of `Books` (folders), thus `Pages` (files), that contain on ea
 
 ## How to use it?
 
-You can either <b>download</b> the whole repo of files (the `Library` folder) or <b>generate</b> it, via the provided `library_of_babel.py` script. Make sure to have at least `` GB free on the disk where you'll be running this script.
+You can run the provided `library_of_babel.py` script for single-core processing or either of `async_events.py` or `process_pool.py`, which are the parallel processing variations. You'll surely need a lot of disk and RAM to complete the output.
 
-Then, the beauty of it arises from the fact that whatever string up to a length of `27` chars should be found on a specific `Line` of a `Page` in a `Book`, considering the following limitations - combinations of chars in this book are created in such a way that there are generated enough variations  to include `the whole English alphabet (and by this quite possible many others)`, but restrictive enough in order to make such script be able to be generated on a personal PC and also stored in a free manner in Cloud (speaking of processing, but especially of disk space), hence there are no combos that:
+In an attempt to make this run even on a personal PC, initially (with combos of length up to `10`), there are some limitations imposed to the output, hence there will be no combos that:
 - contain the same letter 3 times one after the other;
 - contain the same letter 6 times in any substring throughout the variation itself;
 - contain specific char constructs of 2, 3 or 4 letters that would never appear in an English word (avoiding names and onomatopoeias);
@@ -37,4 +37,6 @@ Then, the beauty of it arises from the fact that whatever string up to a length 
 - contain words that have no vowels and are over 6 chars in length, with the exception of "rhythms" (the longest one in English lang.);
 - contain words that have no consonants and are over 5 chars in length, with the exception of "euouae" (the longest one in English lang.); `Definition: euouae (juːˈuːiː ) noun. music. (in medieval music) a mnemonic used to recall the sequence of tones in a particular passage of the Gloria Patri.` => Per <b>Collins English Dictionary</b>. While, per <b>Wikipedia</b>: `The "Gloria Patri", also known as the "Glory Be to the Father" or, colloquially, the "Glory Be", is a doxology, a short hymn of praise to God in various Christian liturgies`.
 
-Use the `search.exe` software to find strings up to a 27-char limit and see where were those found. `They are NOT generated on the spot, but already present, somewhere, in the depths of such Library`.
+But you can tweak it your way. The `27` combination number matches the number of chars used (English alphabet + the space char), but it can be edited into whichever string length you would want. Any value above `10` will be a bit too much for a personal PC to process, still you can set just a value like `4`, let's say, which won't take much t genrate, or above `50` and the more length you add, the more sentences it will be able to export, until having the solution to everything in this world.
+
+Use the `search.exe` software to find strings up to your imposed N-char limit (27 as a default, but actually this limit is not logically related to the nr. of chars in English alphabet + the space char, is just a mere default that simbolizes that) and see where were those found. `Search and see where they'll be present, in the depths of such Library`.

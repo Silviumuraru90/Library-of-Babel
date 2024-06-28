@@ -4,7 +4,7 @@ from itertools import product
 
 symbols = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", 
 "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "]
-combinations = product(symbols, repeat=9)
+combinations = product(symbols, repeat=27)
 
 
 def create_folder(folder_name):
