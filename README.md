@@ -23,6 +23,13 @@ It's a collection of `Books` (folders), thus `Pages` (files), that contain on ea
 
 You can run the provided `library_of_babel.py` script for single-core processing or either of `async_events.py` or `process_pool.py`, which are the parallel processing variations. You'll surely need a lot of disk and RAM to complete the output.
 
+My recommendation for lengthy char combos is to run any of the parallel processing scripts as it is (You'll notice it will create folders with a number and the letter `A` in the names and also files with letter `a` next to the number) and then modify the script to output folders and files with letter `B` & `b` respectively, while also reversing the char sequence provided (letters + " ") and have this second script run in parallel on a different PC. This way, the first script will start creating the combinations from one end, while the other from the other end and you can stop both when you saw they surely outputed the same block of chars (can be easily figured out if you also print to the CLI the current char-combo). It's most probably not going to be the middle, as PCs might be different in RAM and CPU characteristics. One important thing to notice is that each script with generate at first the combos for lengths of `n-(n-1)`, `n-(n-2)` and so on, until `n-1`. These will have duplicates when both apparent halfs of the libs will be combined (`A`s and `B`s), so this works only for combos of `length=n`, which means there is a `len(combo) != max_length` that will need to be added as a filter, in order to generate only the neccesary ones and then combine the files from both PCs into one. This will also work only for 1 run only, otherwise folder and file names will be once again generated from the start, with `1A`, `1B`, `1a`, `1b`... Perhaps their names are better to contain a random string at generation, with low probability to repeat itself, something like [the function used here](https://gitlab.com/Silviu_space/rybka/-/blob/756eca44717aada4d3085243a9c5e15d1464071f/core.py#L58).
+
+=> but with more than 10 chars in length;
+
+---
+
+
 In an attempt to make this run even on a personal PC, initially (with combos of length up to `10`), there are some limitations imposed to the output, hence there will be no combos that:
 - contain the same letter 3 times one after the other;
 - contain the same letter 6 times in any substring throughout the variation itself;
